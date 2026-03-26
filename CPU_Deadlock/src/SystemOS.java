@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class SystemOS {
-    String mode;
+    private String mode;
     private int numProcess;
     private int numResource;
 
@@ -234,6 +234,8 @@ public class SystemOS {
             Banker();
         } else if (mode.equals(MODE_DETECTION)) {
             Detection();
+        } else {
+            System.out.println("Invalid algorithm");
         }
     }
 }
